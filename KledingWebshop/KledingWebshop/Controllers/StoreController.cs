@@ -24,7 +24,7 @@ namespace KledingWebshop.Controllers
 
         public IActionResult Details(int id)
         {
-            var kledingstuk = new Kledingstuk{naam = "Kledingstuk" + id};
+            Kledingstuk kledingstuk = new Kledingstuk();
             return View(kledingstuk);
         }
     }
